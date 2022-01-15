@@ -2,7 +2,7 @@ from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
 
 driver=webdriver.Chrome(executable_path=ChromeDriverManager().install())
-driver.get("https://kite.zerodha.com")
+driver.get("https://kite.zerodha.com/holdings")
 driver.maximize_window()
 username=driver.find_element_by_id("userid").send_keys("MY3129")
 driver.implicitly_wait(1500)
